@@ -10,21 +10,19 @@ Mon objectif à travers ces projets est de développer une compréhension profon
 Ce projet vise à implémenter les opérations fondamentales sur les arbres binaires en C. Il s'agit d'une introduction aux structures de données arborescentes, essentielle pour comprendre des algorithmes plus complexes et optimisés.
 
 # 📚 Table des Matières
-Contexte et Objectifs du Projet
+[Contexte et Objectifs du Projet](https://github.com/Mathieu7483/holbertonschool-binary_trees#-contexte-et-objectifs-du-projet)
 
-Ressources et Apprentissages Clés
+[Ressources et Apprentissages Clés](https://github.com/Mathieu7483/holbertonschool-binary_trees#-ressources-et-apprentissages-cl%C3%A9s)
 
-Exigences Générales
+[Exigences Générales](https://github.com/Mathieu7483/holbertonschool-binary_trees#-exigences-g%C3%A9n%C3%A9rales)
 
-Structures de Données Utilisées
+[Structures de Données Utilisées](https://github.com/Mathieu7483/holbertonschool-binary_trees#-structures-de-donn%C3%A9es-utilis%C3%A9es)
 
-Concepts Abordés
+[Tâches Réalisées](https://github.com/Mathieu7483/holbertonschool-binary_trees#-t%C3%A2ches-r%C3%A9alis%C3%A9es)
 
-Tâches Réalisées
+[Compilation](https://github.com/Mathieu7483/holbertonschool-binary_trees#%EF%B8%8F-compilation)
 
-Compilation
-
-Auteur
+[Auteur](https://github.com/Mathieu7483/holbertonschool-binary_trees#%EF%B8%8F-auteur)
 
 # 💡 Contexte et Objectifs du Projet
 Les arbres binaires permettent de stocker des données de manière hiérarchique, ce qui peut offrir des avantages de performance significatifs par rapport aux listes chaînées ou aux tableaux. Ce projet couvre les concepts de base pour maîtriser ces structures.
@@ -81,7 +79,7 @@ Fichier d'En-tête (binary_trees.h) : Doit inclure les prototypes de toutes les 
 Pour ce projet, les structures et types suivants sont utilisés.
 
 Arbre Binaire de Base
-C
+```C
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -101,11 +99,14 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 Types pour les arbres spécialisés (BST, AVL, etc.)
+```
+```
 C
 
 typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
+```
 
 # 🚀 Tâches Réalisées
 Ce projet comprend de nombreuses tâches, chacune testant un aspect différent de la manipulation des arbres binaires.
@@ -115,133 +116,133 @@ Objectif : Créer un nouveau nœud d'arbre binaire.
 
 Prototype : binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
-Fichier : 0-binary_tree_node.c
+Fichier : [0-binary_tree_node.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/0-binary_tree_node.c)
 
 1. Insert left
 Objectif : Insérer un nœud en tant qu'enfant gauche d'un nœud parent.
 
 Prototype : binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
-Fichier : 1-binary_tree_insert_left.c
+Fichier : [1-binary_tree_insert_left.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/1-binary_tree_insert_left.c)
 
 2. Insert right
 Objectif : Insérer un nœud en tant qu'enfant droit d'un nœud parent.
 
 Prototype : binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 
-Fichier : 2-binary_tree_insert_right.c
+Fichier : [2-binary_tree_insert_right.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/2-binary_tree_insert_right.c)
 
 3. Delete
 Objectif : Supprimer un arbre binaire entier.
 
 Prototype : void binary_tree_delete(binary_tree_t *tree);
 
-Fichier : 3-binary_tree_delete.c
+Fichier : [3-binary_tree_delete.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/3-binary_tree_delete.c)
 
 4. Is leaf
 Objectif : Vérifier si un nœud est une feuille.
 
 Prototype : int binary_tree_is_leaf(const binary_tree_t *node);
 
-Fichier : 4-binary_tree_is_leaf.c
+Fichier : [4-binary_tree_is_leaf.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/4-binary_tree_is_leaf.c)
 
 5. Is root
 Objectif : Vérifier si un nœud est la racine d'un arbre.
 
 Prototype : int binary_tree_is_root(const binary_tree_t *node);
 
-Fichier : 5-binary_tree_is_root.c
+Fichier : [5-binary_tree_is_root.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/5-binary_tree_is_root.c)
 
 6. Pre-order traversal
 Objectif : Parcourir un arbre en utilisant la méthode pré-ordre.
 
 Prototype : void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
-Fichier : 6-binary_tree_preorder.c
+Fichier : [6-binary_tree_preorder.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/6-binary_tree_preorder.c)
 
 7. In-order traversal
 Objectif : Parcourir un arbre en utilisant la méthode in-ordre.
 
 Prototype : void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 
-Fichier : 7-binary_tree_inorder.c
+Fichier : [7-binary_tree_inorder.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/7-binary_tree_inorder.c)
 
 8. Post-order traversal
 Objectif : Parcourir un arbre en utilisant la méthode post-ordre.
 
 Prototype : void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
-Fichier : 8-binary_tree_postorder.c
+Fichier : [8-binary_tree_postorder.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/8-binary_tree_postorder.c)
 
 9. Height
 Objectif : Mesurer la hauteur d'un arbre binaire.
 
 Prototype : size_t binary_tree_height(const binary_tree_t *tree);
 
-Fichier : 9-binary_tree_height.c
+Fichier : [9-binary_tree_height.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/9-binary_tree_height.c)
 
 10. Depth
 Objectif : Mesurer la profondeur d'un nœud.
 
 Prototype : size_t binary_tree_depth(const binary_tree_t *tree);
 
-Fichier : 10-binary_tree_depth.c
+Fichier : [10-binary_tree_depth.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/10-binary_tree_depth.c)
 
 11. Size
 Objectif : Mesurer la taille (nombre total de nœuds) d'un arbre binaire.
 
 Prototype : size_t binary_tree_size(const binary_tree_t *tree);
 
-Fichier : 11-binary_tree_size.c
+Fichier : [11-binary_tree_size.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/11-binary_tree_size.c)
 
 12. Leaves
 Objectif : Compter le nombre de feuilles dans un arbre binaire.
 
 Prototype : size_t binary_tree_leaves(const binary_tree_t *tree);
 
-Fichier : 12-binary_tree_leaves.c
+Fichier : [12-binary_tree_leaves.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/12-binary_tree_leaves.c)
 
 13. Nodes
 Objectif : Compter le nombre de nœuds avec au moins un enfant.
 
 Prototype : size_t binary_tree_nodes(const binary_tree_t *tree);
 
-Fichier : 13-binary_tree_nodes.c
+Fichier : [13-binary_tree_nodes.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/13-binary_tree_nodes.c)
 
 14. Balance factor
 Objectif : Mesurer le facteur d'équilibre d'un arbre binaire.
 
 Prototype : int binary_tree_balance(const binary_tree_t *tree);
 
-Fichier : 14-binary_tree_balance.c
+Fichier : [14-binary_tree_balance.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/14-binary_tree_balance.c)
 
 15. Is full
 Objectif : Vérifier si un arbre binaire est plein.
 
 Prototype : int binary_tree_is_full(const binary_tree_t *tree);
 
-Fichier : 15-binary_tree_is_full.c
+Fichier : [15-binary_tree_is_full.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/15-binary_tree_is_full.c)
 
 16. Is perfect
 Objectif : Vérifier si un arbre binaire est parfait.
 
 Prototype : int binary_tree_is_perfect(const binary_tree_t *tree);
 
-Fichier : 16-binary_tree_is_perfect.c
+Fichier : [16-binary_tree_is_perfect.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/16-binary_tree_is_perfect.c)
 
 17. Sibling
 Objectif : Trouver le frère ou la sœur d'un nœud.
 
 Prototype : binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 
-Fichier : 17-binary_tree_sibling.c
+Fichier : [17-binary_tree_sibling.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/17-binary_tree_sibling.c)
 
 18. Uncle
 Objectif : Trouver l'oncle d'un nœud.
 
 Prototype : binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
-Fichier : 18-binary_tree_uncle.c
+Fichier : [18-binary_tree_uncle.c](https://github.com/Mathieu7483/holbertonschool-binary_trees/blob/main/18-binary_tree_uncle.c)
 
 # ⚙️ Compilation
 Les fichiers de ce projet seront compilés à l'aide de gcc avec les options suivantes :
